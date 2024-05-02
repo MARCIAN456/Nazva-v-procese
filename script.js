@@ -12,7 +12,9 @@ class Product{
         <p>${this.title}</p>
         <p>${this.price}</p>
         </div>
-        <img class="heart" src="img/heart (1).png" alt="">
+        <button class="heart-btn">
+            <img src="img/heart (1).png" alt="">
+        </button>
         </div>
         <div class="btn">В корзину</div>
     </div>`     
@@ -22,6 +24,8 @@ class Product{
 products = [
     new Product("Худі Трешер", "20000 UAH" , "image 10.png"),
     new Product("Худі Трешер", "10000 UAH" , "image 11.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 13.png"),
     new Product("Худі Трешер", "20000 UAH", "image 12.png"),
 ]
 
