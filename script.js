@@ -35,3 +35,5 @@ let products_list = document.querySelector('.all-cards')
 products.forEach(product => {
     products_list.innerHTML += product.get_card()
 });
+
+
