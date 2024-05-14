@@ -141,6 +141,9 @@ select {
     font-weight: bolder;
     color: white;
 }
+.menu-text:hover{
+  border-bottom: 2px solid white;
+}
 
 .heart{
     width: 3.5vh;
@@ -157,11 +160,9 @@ select {
 }
 
 .block-img{
-  background: url(main_img.png);
   width: 100%;
   height: 80vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  justify-content: center;
    /* margin: 0;
     display: flex;
     justify-content: center;
