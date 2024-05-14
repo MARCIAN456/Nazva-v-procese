@@ -1,0 +1,172 @@
+.all-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.cards {
+    background: #D9D9D9;
+    padding: 20px;
+    margin: 30px;
+}
+
+.image {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #000000;
+    padding: 10px;  
+    border-radius: 25cm 5cm;
+}
+
+.text-box {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.heart-btn{
+    display: block;
+    background: transparent;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;  
+} 
+=======
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: #2C2B2B;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 15vh; 
+    margin-left: 50px
+
+}
+
+.menu-text{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+}
+.menu-text:hover{
+  border-bottom: 2px solid white;
+}
+
+.heart{
+    width: 3.5vh;
+}
+
+.shopping-cart{
+    width: 3.5vh;
+}
+
+.fund{
+    margin-right: 50px;
+    width: 15vh;
+
+}
+
+.block-img{
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+   /* margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+
+}
