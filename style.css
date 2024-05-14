@@ -103,6 +103,7 @@ a{
     border: 3px solid #000000;
     padding: 10px;  
     border-radius: 25cm 5cm;
+    color: black;
 }
 
 .text-box {
@@ -293,4 +294,43 @@ select {
 .order-label{
     color: #999;
     padding: 3px;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    font-size: 150%;
+    weight: ;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-word{
+    font-size: 150%;
+    weight: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.cart-line{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 55px;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 150px;
+    height: 200px;
+    margin-right: 850px;
+    font-size: 150%;
+
 }
