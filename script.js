@@ -27,6 +27,9 @@ products = [
     new Product("Худі Трешер", "20000 UAH", "image 12.png"),
     new Product("Худі Трешер", "20000 UAH", "image 13.png"),
     new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 13.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    
 ]
 
 
@@ -35,5 +38,7 @@ let products_list = document.querySelector('.all-cards')
 products.forEach(product => {
     products_list.innerHTML += product.get_card()
 });
+
+
 
 
