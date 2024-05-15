@@ -188,6 +188,14 @@ select {
     font-weight: bolder;
     color: white;
 }
+
+.liked{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 .liked-text{
   display: flex;
   justify-content: center;
@@ -200,15 +208,15 @@ select {
 
 .clear-like{
   display: flex;
-  width: 200px;
+  width: 300px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 100;
   margin-top: 10px;
   letter-spacing: 5px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 
 
 }
