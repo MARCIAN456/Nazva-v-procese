@@ -1,9 +1,9 @@
-.noto-sans-<uniquifier> {
+.noto-sans {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:"wdth" 100;
+  font-variation-settings:"width" 100;
 }
 
 body{
