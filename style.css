@@ -12,6 +12,12 @@ body{
     margin: 0;
 }
 
+.discounts{
+    position: relative;
+    min-height: 60vh;
+
+}
+
 .discounts-top{
     width: 100%;
     height: 47px;
@@ -29,7 +35,14 @@ body{
     border-bottom: 3px solid black;
 }
 
-    
+.discprice{
+    font-size: 100px;
+    width: 55%;
+    z-index: 10;
+    font-weight: 600;
+}
+
+
 .t-shirts{
     display: flex;
     justify-content: end;
@@ -41,9 +54,11 @@ body{
 }
 
 .complect{
-    display: flex;
-    justify-content: end;
-    margin-left: 750px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom:0 ;
+    z-index: 0;
 }
 
 footer{
@@ -232,6 +247,8 @@ select {
     width: 3.5vh;
 }
 
+
+
 .fund{
     margin-right: 50px;
     width: 15vh;
@@ -322,6 +339,12 @@ select {
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
     padding: 55px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
 }
 
 .cart-item{
@@ -333,4 +356,11 @@ select {
     margin-right: 850px;
     font-size: 150%;
 
+}
+
+.product-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
 }
