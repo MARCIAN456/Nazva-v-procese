@@ -1,3 +1,6 @@
+let products_list = document.querySelector('.all-cards')
+
+
 class Product{
     constructor(title, price, image, description="") {
         this.title = title;
@@ -30,10 +33,20 @@ products = [
 ]
 
 
-let products_list = document.querySelector('.all-cards')
+
 
 products.forEach(product => {
     products_list.innerHTML += product.get_card()
 });
+
+class Cart{
+    constructor(){
+        this.items = []
+        this.total = 0
+    }
+}
+
+
+
 
 
