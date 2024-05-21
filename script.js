@@ -1,5 +1,19 @@
 let products_list = document.querySelector('.all-cards')
 
+function getCookieValue(cookieName) {
+    const cookies = document.cookie.split(';');
+
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim(); 
+
+        if (cookie.startsWith(cookieName + '=')) {
+            return cookie.substring(cookieName.length + 1); 
+        }
+    }
+
+    return '';
+}
+
 class Product{
     constructor(title, price, image, description="") {
         this.title = title;
@@ -24,9 +38,9 @@ class Product{
 };
 
 products = [
-    new Product("Худі Трешер", 20000 , "image 10.png"),
-    new Product("Худі Трешер", 20000 , "image 11.png"),
-    new Product("Худі Трешер", 20000 , "image 12.png"),
+    new Product("Худі Трешер", 20000, "image 10.png"),
+    new Product("Худі Трешер", 20000, "image 11.png"),
+    new Product("Худі Трешер", 20000, "image 12.png"),
     new Product("Худі Трешер", 20000, "image 13.png"),
     new Product("Худі Трешер", 20000, "image 12.png"),
 ]
@@ -44,16 +58,10 @@ class Cart{
     constructor(){
         this.items = []
         this.total = 0
+        this.loadCartFromCookies()
+        console.log(this.items)
     }
-    addItem(event) {
-        let target_card = event.target.closest(".cards")
-        let title = target_card.querySelector(".card-title").innerHTML 
-        let price = +target_card.querySelector(".price").innerHTML 
-        let item = {
-            title: title, 
-            price: price
-        }
-         console.log(this.items)
+    addItem(item) {
         this.items.push(item);
         this.saveCartToCookies()
        
@@ -84,7 +92,20 @@ class Cart{
 
 let cart = new Cart()
 
+function getItem(event){
+    let target_card = event.target.closest(".cards")
+    let title = target_card.querySelector(".card-title").innerHTML 
+    let price = +target_card.querySelector(".price").innerHTML 
+    let item = {
+        title: title, 
+        price: price
+    }
+    cart.addItem(item)
+    
+}
+
 buy_btn.forEach(function(button){
-    button.addEventListener("click", cart.addItem)
+    button.addEventListener("click", getItem)
 })
+
 
