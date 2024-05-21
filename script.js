@@ -45,6 +45,7 @@ products = [
     new Product("Худі Трешер", "20000 UAH", "image 12.png"),
     new Product("Худі Трешер", "20000 UAH", "image 13.png"),
     new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
     
 ]
 

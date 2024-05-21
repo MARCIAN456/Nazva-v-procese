@@ -22,6 +22,11 @@ body{
     border-bottom: 3px solid black;
 }
 
+.complect{
+    width: 750px;
+    height: 600px;
+}
+
 .discounts-bottom{
     margin-top: 150px;
     width: 100%;
