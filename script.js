@@ -38,11 +38,14 @@ class Product{
 };
 
 products = [
-    new Product("Худі Трешер", 20000, "image 10.png"),
-    new Product("Худі Трешер", 20000, "image 11.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
-    new Product("Худі Трешер", 20000, "image 13.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH" , "image 10.png"),
+    new Product("Худі Трешер", "10000 UAH" , "image 11.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 13.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 13.png"),
+    new Product("Худі Трешер", "20000 UAH", "image 12.png"),
+    
 ]
 
 
@@ -108,6 +111,8 @@ function getItem(event){
 buy_btn.forEach(function(button){
     button.addEventListener("click", getItem)
 })
+
+
 
 
 
