@@ -86,8 +86,9 @@ class Cart{
             });
         }
     }
-
+    
 }
+
 
 
 let cart = new Cart()
