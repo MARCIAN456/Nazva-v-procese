@@ -111,6 +111,7 @@ a{
     padding: 10px;  
     border-radius: 25cm 5cm;
     color: black;
+    cursor: pointer;
 }
 
 .text-box {
@@ -124,7 +125,8 @@ a{
     background: transparent;
     padding: 15px;
     margin: 10px 0;
-    border: none;  
+    border: none; 
+    cursor: pointer; 
 } 
 /* Указываем box sizing */
 *,
