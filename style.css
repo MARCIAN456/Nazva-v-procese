@@ -4,6 +4,10 @@ body{
     margin: 0;
 }
 
+.main-img{
+    width: 100%;
+}
+
 .discounts{
     position: relative;
     min-height: 60vh;
