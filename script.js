@@ -45,8 +45,7 @@ products = [
     new Product("Худі Треер", 20100, "image 12.png"),
     new Product("Худі Тшер", 20030, "image 13.png"),
     new Product("Худі Трер", 23000, "image 12.png"),
-    new Product("Худі Треш", 230000, "image 12.png"),
-    
+    new Product("Худі Треш", 230000, "image 12.png"),    
 ]
 
 
@@ -63,7 +62,6 @@ class Cart{
     constructor(){
         this.items = [];
         this.total = 0;
-        this.image = this.image;
         this.loadCartFromCookies();
         console.log(this.items)
     }
@@ -94,7 +92,7 @@ class Cart{
     }
     getItem(item){
         return`<div class="cart-line">
-        <img src="${this.image}" alt="">
+        <img class="card-image" src="${item.image}" alt="">
         <div class="product-info">
             <h3 class="item-title">
                 ${item.title}
@@ -122,9 +120,11 @@ function getItem(event){
     let target_card = event.target.closest(".cards")
     let title = target_card.querySelector(".card-title").innerHTML 
     let price = +target_card.querySelector(".price").innerHTML 
+    let image = target_card.querySelector(".image").getAttribute("src") 
     let item = {
         title: title, 
-        price: price
+        price: price,
+        image: image
     }
     cart.addItem(item)
     
