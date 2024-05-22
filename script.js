@@ -61,9 +61,10 @@ let buy_btn = document.querySelectorAll(".buy-btn")
 
 class Cart{
     constructor(){
-        this.items = []
-        this.total = 0
-        this.loadCartFromCookies()
+        this.items = [];
+        this.total = 0;
+        this.image = this.image;
+        this.loadCartFromCookies();
         console.log(this.items)
     }
     addItem(item) {
@@ -93,7 +94,7 @@ class Cart{
     }
     getItem(item){
         return`<div class="cart-line">
-        <img src="/img/image 11.png" alt="">
+        <img src="${this.image}" alt="">
         <div class="product-info">
             <h3 class="item-title">
                 ${item.title}
