@@ -330,7 +330,7 @@ select {
     padding: 3px;
 }
 
-.cart{
+.cart,.cart-items{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -376,6 +376,7 @@ select {
 .product-info{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
 }
