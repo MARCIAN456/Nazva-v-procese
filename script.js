@@ -38,14 +38,14 @@ class Product{
 };
 
 products = [
-    new Product("Худі Трешер", 20000, "image 10.png"),
-    new Product("Худі Трешер", 20000, "image 11.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
-    new Product("Худі Трешер", 20000, "image 13.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
-    new Product("Худі Трешер", 20000, "image 13.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
-    new Product("Худі Трешер", 20000, "image 12.png"),
+    new Product("Худі Трешр", 2000, "image 10.png"),
+    new Product("Худі Тршер", 3000, "image 11.png"),
+    new Product("Худі Треше", 20000, "image 12.png"),
+    new Product("Худі решер", 200000, "image 13.png"),
+    new Product("Худі Треер", 20100, "image 12.png"),
+    new Product("Худі Тшер", 20030, "image 13.png"),
+    new Product("Худі Трер", 23000, "image 12.png"),
+    new Product("Худі Треш", 230000, "image 12.png"),
     
 ]
 
@@ -73,7 +73,7 @@ class Cart{
     }
     saveCartToCookies() {
         let cartJSON = JSON.stringify(this.items);
-        document.cookie = `cart=${cartJSON}; max-age=${60 * 60 * 24 * 7}; path=/`;
+        document.cookie = `cart=${cartJSON}; max-age=${60}; path=/`;
     }
     calculateTotalPrice(){
         this.total = 0;
